@@ -17,6 +17,6 @@ set_target_properties( cnary-exe PROPERTIES
     OUTPUT_NAME cnary )
 target_link_libraries( cnary-exe cnary )
 
-install(TARGETS cnary-exe cnary
+install( TARGETS cnary-exe cnary
      RUNTIME DESTINATION bin
      ARCHIVE DESTINATION lib )
