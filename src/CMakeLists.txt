@@ -34,8 +34,8 @@ set( CXX_SOURCE_FILES
     Structure.cpp
     Uid.cpp )
 
-add_library( plist ${C_SOURCE_FILES} )
+add_library( plist STATIC ${C_SOURCE_FILES} )
 target_include_directories( plist PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} )
 target_link_libraries( plist cnary )
-add_library( plist++ ${CXX_SOURCE_FILES} )
+add_library( plist++ STATIC ${CXX_SOURCE_FILES} )
 
